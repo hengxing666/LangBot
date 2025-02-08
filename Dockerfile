@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY web ./web
 
-RUN cd web && npm install && npm run build
+RUN cd web && npm install -y && npm run build -y
 
 FROM python:3.10.13-slim
 
